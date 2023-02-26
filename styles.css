@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: black;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./the3-1-removebg.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: 80%;
+    background-position-y: 60%;
+
+}
+
+
+
+.container {
+    padding: 0px 10%;
+    /*  space milega from top 10px, left and right se 10% ka space*/
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+    /*list-style se bullet points customize*/
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    /* position absolute kr rkha hai after me isiliye idhr relative krna hoga varna nhi chlega */
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    /* jaise hi cursor lists pr rkhenge hover effect on ho jayga jiski vaja se after
+     effect activate hoga like pehle width 0 thi but hover hone pr --> after activate-->width 100%
+      and transition ki vaja se dheere ara bar */
+}
+
+.header-text {
+    font-size: 35px;
+    margin-top: 20rem;
+    margin-left: -5rem;
+}
+
+.header-text h1 {
+    margin-top: 20px;
+    font-size: 60px;
+}
+
+.name-red {
+    color: #ff004f;
+
+}
+
+
+/* -------------ABOUT----------------- */
+#about {
+    background: black;
+
+}
+
+.about-container {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-left {
+    flex-basis: 35%;
+}
+
+.about-left img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-right {
+    color: antiquewhite;
+    flex-basis: 60%;
+}
+
+.about-right h1 {
+    color: #ff004f;
+    font-size: 60px;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    left: 0;
+    bottom: -6px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+span {
+    color: #ff004f;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+
+/* -------PORTFOLIO-------- */
+
+#portfolio {
+    padding: 50px 0;
+}
+
+
+.about-me {
+    margin-top: 3rem;
+    font-size: 60px;
+    color: #ff004f;
+}
+
+.my-work {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: 0.5s
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.layer {
+    height: 0;
+    width: 100%;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+    font: 14px;
+    transition: height 0.5s;
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.layer h3 {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.layer a {
+    background: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    height: 60px;
+    width: 60px;
+    margin-top: 20px;
+}
+
+.material-symbols-rounded {
+    color: rgb(234, 8, 8);
+    margin-top: 1.1rem;
+    margin-left: 1.15rem;
+}
+
+.button {
+    display: block;
+    margin: 50px auto;
+    padding: 14px 50px;
+    text-decoration: none;
+    border: 1px #ff004f solid;
+    border-radius: 10px;
+    width: fit-content;
+    color: #fff;
+    transition: 0.5s;
+
+}
+
+.button:hover {
+    background: #ff004f;
+}
+
+/* ------contact------ */
+#contact {
+    padding: 50px 0;
+}
+
+.contact-text {
+    margin-top: 3rem;
+    font-size: 60px;
+    color: #ff004f;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+
+.contact-left p {
+    /* display: flex; */
+    margin-top: 20px;
+}
+
+.material-symbols-rounded {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media a {
+    text-decoration: none;
+    margin-right: 15px;
+    display: inline-block;
+    color: #ababab;
+    transition: transform 0.5s;
+}
+
+.social-media a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.fa-brands {
+    font-size: 35px;
+
+}
+
+.fa-solid {
+    padding: 4px;
+    color: #ff004f;
+
+}
+
+.contact-left p i {
+    font-size: 27px;
+}
+
+.second {
+
+    font-size: 18px;
+    display: block;
+    margin-top: 20px;
+    padding: 14px 60px;
+    text-decoration: none;
+    background-color: #ff004f;
+    border: 1px #ff004f solid;
+    border-radius: 10px;
+    width: fit-content;
+    color: #fff;
+    cursor: pointer;
+}
+
+.content-right {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* ---------css for small screen-------- */
+nav .fa-solid {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .header {
+        background-image: url(./Promo-Facebook-Facebook-stories_2_.png);
+        background-position-x: 95%;
+        background-position-y: 20%;
+    }
+
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+        padding: 0px 14%;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+        color: #fff;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+
+    }
+
+    .about-me {
+        font-size: 40px;
+    }
+
+    .about-left,
+    .about-right {
+        flex-basis: 100%;
+        font-size: 19px;
+    }
+
+    .about-left {
+        margin-bottom: 30px;
+    }
+
+    .about-right {
+        font-size: 14px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+}
+
+#msg {
+    color: #026532;
+    display: block;
+
+}

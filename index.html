@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreyas:The-one-true-jod</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://kit.fontawesome.com/a8c0c75693.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <img src="./Screenshot_2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <!-- <li><a href="#">SERVICES</a></li> -->
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I am <span class="name-red">Shreyas</span><br> from Delhi bhenchod</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-left">
+                    <img src="./Screenshot_1.png ">
+                </div>
+                <div class="about-right">
+                    <h1 class="about-me">About Me</h1>
+                    <div class="about-me-text">
+                        <p class="about-para">Hey there! I'm a big fan of anime and manga. I just love exploring all the
+                            different worlds and characters that these mediums have to offer. And on top of that, I'm
+                            also lucky enough to have a really beautiful girlfriend who makes my life so much happier.
+
+                            But I'm not just about my hobbies and personal life. I'm also really into programming, and
+                            lately, I've been diving into web development. It's just so satisfying to create something
+                            from scratch, you know? And I'm really eager to learn and improve my skills. I'm a hard
+                            worker and I'm always willing to put in the time and effort needed to achieve my goals.
+
+                            Overall, I'm someone who enjoys a balance of personal interests and career aspirations. I
+                            have a strong drive and motivation to succeed in all aspects of my life.</p>
+
+                        <div class="tab-titles">
+
+                            <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                            <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
+                            <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>C++</span><br>Competetive coding</li>
+                                <li><span>Python</span><br> Projects</li>
+                                <li><span>HTML</span><br> Web development</li>
+                                <li><span>CSS</span><br> Web development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>C++</span><br>Competetive coding <br><a
+                                        href="https://leetcode.com/user3493c/">Check out my Leetcode</a></li>
+                                <li><span>Python</span><br> Projects <br><a
+                                        href="https://github.com/Zeref101/ping-pong-">Check out my game</a></li>
+                                <li><span>Web development</span><br> Web development projects <br><a
+                                        href="https://zeref101.github.io/csgo-login-page/">Check out my first login
+                                        page</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>High school</span><br>Adarsh Public School</li>
+                                <li><span>B.Tech</span><br>Vellore Institute of Technology</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------SERVICES-------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="about-me">My Work</h1>
+            <div class="portfolio-content">
+                <div class="my-work" id="game">
+                    <div class="work">
+                        <img src="./tt-1.png">
+
+                        <div class="layer">
+                            <h3>Ping-pong</h3>
+                            <p>A classic ping-pong game, you can have a 1v1 with your best friend for a free pizza</p>
+                            <a href="https://github.com/Zeref101/ping-pong-"><span class="material-symbols-rounded">
+                                    display_external_input
+                                </span></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./uuuuuu-01.png">
+                        <div class="layer" id="login">
+                            <h3>login-Page</h3>
+                            <p>A login page for pro csgo players <br>no noobs required</p>
+                            <a href="https://zeref101.github.io/csgo-login-page/"><span
+                                    class="material-symbols-rounded">
+                                    display_external_input
+                                </span></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./Screenshot_5.png">
+
+                        <div class="layer">
+                            <h3>Personal Site</h3>
+                            <p>If you want to know me, check this website</p>
+                            <a href="#"><span class="material-symbols-rounded">
+                                    display_external_input
+                                </span></a>
+                        </div>
+
+                    </div>
+                    <div class="work">
+                        <img src="./Screenshot_6.png" alt="">
+                    </div>
+
+                </div>
+                <a href="#" class="button">See more</a>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- ---------contact--------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="contact-text">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> shreyas.mohanty03@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 7678474172</p>
+                    <div class="social-media">
+                        <a href="https://instagram.com/_.shreyas0228._?igshid=ZDdkNTZiNTM= " class="insta"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="www.linkedin.com/in/shreyas-mohanty-8a899524a" class="linkedin"><i
+                                class="fa-brands fa-linkedin"></i></i></a>
+                        <a href="https://github.com/Zeref101" class="github"><i class="fa-brands fa-github"></i></a>
+
+                    </div>
+                    <a href="" class="second">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form class="contact-right-form" name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="textarea" name="message" cols="6" rows="8"
+                            placeholder="Your message"></textarea>
+                        <button type="submit" class="second right">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzs21eoZGN_qn2XBkfMpEkp33KsS-61owI51H9BOITzU4QfeKELUnq2tmCjPV_kFZ1B/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+
+</body>
+
+</html>
