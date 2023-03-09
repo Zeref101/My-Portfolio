@@ -252,6 +252,7 @@ span {
 
 .button {
     display: block;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .1);
     margin: 50px auto;
     padding: 14px 50px;
     text-decoration: none;
@@ -371,6 +372,20 @@ nav .fa-solid {
     display: none;
 }
 
+footer {
+    background-color: #262626;
+    font-size: 12px;
+    height: 4vh;
+
+}
+
+footer .container {
+    display: flex;
+    color: #aaaaaa;
+    justify-content: center;
+    align-items: center;
+
+}
 
 @media only screen and (max-width: 600px) {
     .header {
