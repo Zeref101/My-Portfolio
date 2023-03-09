@@ -370,6 +370,20 @@ form textarea {
 nav .fa-solid {
     display: none;
 }
+footer {
+    background-color: #262626;
+    font-size: 12px;
+    height: 4vh;
+
+}
+
+footer .container {
+    display: flex;
+    color: #aaaaaa;
+    justify-content: center;
+    align-items: center;
+
+}
 
 
 @media only screen and (max-width: 600px) {
